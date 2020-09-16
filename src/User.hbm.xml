@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+	<class name="beans.UserDetails" table="UserDetails">
+		<id name="id" type="int">
+			<column name="ID"/>
+			<generator class="identity"/>
+		</id>
+		
+		<property name="username">
+			<column name="USERNAME"/>
+		</property>
+		
+		<property name="password">
+			<column name="PASSWORD"/>
+		</property>
+		
+		<property name="gender">
+			<column name="GENDER"/>
+		</property>
+		
+		<property name="age">
+			<column name="AGE"/>
+		</property>
+		
+		<property name="c_num">
+			<column name="CONTACT_NUMBER"/>
+		</property>
+		
+		<property name="email">
+			<column name="EMAIL"/>
+		</property>
+		
+	</class>
+</hibernate-mapping>
